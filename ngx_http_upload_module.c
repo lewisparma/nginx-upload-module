@@ -11,7 +11,7 @@
 #include <ngx_http.h>
 #include <nginx.h>
 
-#if (NGX_HAVE_OPENSSL_MD5_H)
+#if (NGX_HAVE_OPENSSL_MD5_H || NGX_OPENSSL_MD5)
 #include <openssl/md5.h>
 #else
 #include <md5.h>
